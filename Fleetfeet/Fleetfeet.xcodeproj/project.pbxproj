@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		0025A2451C29099F00586EBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0025A2441C29099F00586EBF /* main.m */; };
 		0025A2481C29099F00586EBF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0025A2471C29099F00586EBF /* AppDelegate.m */; };
-		0025A24B1C29099F00586EBF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0025A24A1C29099F00586EBF /* ViewController.m */; };
-		0025A24E1C29099F00586EBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0025A24C1C29099F00586EBF /* Main.storyboard */; };
 		0025A2511C29099F00586EBF /* Fleetfeet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0025A24F1C29099F00586EBF /* Fleetfeet.xcdatamodeld */; };
 		0025A2531C29099F00586EBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0025A2521C29099F00586EBF /* Assets.xcassets */; };
 		0025A2561C29099F00586EBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0025A2541C29099F00586EBF /* LaunchScreen.storyboard */; };
@@ -40,9 +38,6 @@
 		0025A2441C29099F00586EBF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0025A2461C29099F00586EBF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0025A2471C29099F00586EBF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0025A2491C29099F00586EBF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0025A24A1C29099F00586EBF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0025A24D1C29099F00586EBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0025A2501C29099F00586EBF /* Fleetfeet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fleetfeet.xcdatamodel; sourceTree = "<group>"; };
 		0025A2521C29099F00586EBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0025A2551C29099F00586EBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -105,9 +100,6 @@
 			children = (
 				0025A2461C29099F00586EBF /* AppDelegate.h */,
 				0025A2471C29099F00586EBF /* AppDelegate.m */,
-				0025A2491C29099F00586EBF /* ViewController.h */,
-				0025A24A1C29099F00586EBF /* ViewController.m */,
-				0025A24C1C29099F00586EBF /* Main.storyboard */,
 				0025A2521C29099F00586EBF /* Assets.xcassets */,
 				0025A2541C29099F00586EBF /* LaunchScreen.storyboard */,
 				0025A2571C29099F00586EBF /* Info.plist */,
@@ -248,7 +240,6 @@
 			files = (
 				0025A2561C29099F00586EBF /* LaunchScreen.storyboard in Resources */,
 				0025A2531C29099F00586EBF /* Assets.xcassets in Resources */,
-				0025A24E1C29099F00586EBF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +264,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0025A24B1C29099F00586EBF /* ViewController.m in Sources */,
 				0025A2481C29099F00586EBF /* AppDelegate.m in Sources */,
 				0025A2511C29099F00586EBF /* Fleetfeet.xcdatamodeld in Sources */,
 				0025A2451C29099F00586EBF /* main.m in Sources */,
@@ -312,14 +302,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0025A24C1C29099F00586EBF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0025A24D1C29099F00586EBF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0025A2541C29099F00586EBF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

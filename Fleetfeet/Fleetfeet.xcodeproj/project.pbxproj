@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		001963CF1C2D04A4002CD663 /* NetworkConnectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 001963CE1C2D04A4002CD663 /* NetworkConnectView.m */; };
+		001963D41C2D04DD002CD663 /* NetworkConnectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001963D31C2D04DD002CD663 /* NetworkConnectViewController.m */; };
+		001963D71C2D050E002CD663 /* BaseTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001963D61C2D050E002CD663 /* BaseTabViewController.m */; };
+		001963DA1C2D0521002CD663 /* CollectDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 001963D91C2D0521002CD663 /* CollectDataView.m */; };
+		001963DD1C2D055A002CD663 /* SettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 001963DC1C2D055A002CD663 /* SettingsView.m */; };
 		0025A2451C29099F00586EBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0025A2441C29099F00586EBF /* main.m */; };
 		0025A2481C29099F00586EBF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0025A2471C29099F00586EBF /* AppDelegate.m */; };
 		0025A2511C29099F00586EBF /* Fleetfeet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0025A24F1C29099F00586EBF /* Fleetfeet.xcdatamodeld */; };
@@ -34,6 +39,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		001963CD1C2D04A4002CD663 /* NetworkConnectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkConnectView.h; sourceTree = "<group>"; };
+		001963CE1C2D04A4002CD663 /* NetworkConnectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkConnectView.m; sourceTree = "<group>"; };
+		001963D21C2D04DD002CD663 /* NetworkConnectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkConnectViewController.h; sourceTree = "<group>"; };
+		001963D31C2D04DD002CD663 /* NetworkConnectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkConnectViewController.m; sourceTree = "<group>"; };
+		001963D51C2D050E002CD663 /* BaseTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabViewController.h; sourceTree = "<group>"; };
+		001963D61C2D050E002CD663 /* BaseTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabViewController.m; sourceTree = "<group>"; };
+		001963D81C2D0521002CD663 /* CollectDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectDataView.h; sourceTree = "<group>"; };
+		001963D91C2D0521002CD663 /* CollectDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectDataView.m; sourceTree = "<group>"; };
+		001963DB1C2D055A002CD663 /* SettingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsView.h; sourceTree = "<group>"; };
+		001963DC1C2D055A002CD663 /* SettingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsView.m; sourceTree = "<group>"; };
 		0025A2401C29099F00586EBF /* Fleetfeet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fleetfeet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0025A2441C29099F00586EBF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0025A2461C29099F00586EBF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -75,6 +90,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		001963D01C2D04AD002CD663 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				001963CD1C2D04A4002CD663 /* NetworkConnectView.h */,
+				001963CE1C2D04A4002CD663 /* NetworkConnectView.m */,
+				001963D81C2D0521002CD663 /* CollectDataView.h */,
+				001963D91C2D0521002CD663 /* CollectDataView.m */,
+				001963DB1C2D055A002CD663 /* SettingsView.h */,
+				001963DC1C2D055A002CD663 /* SettingsView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		001963D11C2D04C1002CD663 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				001963D21C2D04DD002CD663 /* NetworkConnectViewController.h */,
+				001963D31C2D04DD002CD663 /* NetworkConnectViewController.m */,
+				001963D51C2D050E002CD663 /* BaseTabViewController.h */,
+				001963D61C2D050E002CD663 /* BaseTabViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		0025A2371C29099F00586EBF = {
 			isa = PBXGroup;
 			children = (
@@ -100,10 +139,8 @@
 			children = (
 				0025A2461C29099F00586EBF /* AppDelegate.h */,
 				0025A2471C29099F00586EBF /* AppDelegate.m */,
-				0025A2521C29099F00586EBF /* Assets.xcassets */,
-				0025A2541C29099F00586EBF /* LaunchScreen.storyboard */,
-				0025A2571C29099F00586EBF /* Info.plist */,
-				0025A24F1C29099F00586EBF /* Fleetfeet.xcdatamodeld */,
+				001963D11C2D04C1002CD663 /* ViewControllers */,
+				001963D01C2D04AD002CD663 /* Views */,
 				0025A2431C29099F00586EBF /* Supporting Files */,
 			);
 			path = Fleetfeet;
@@ -112,6 +149,10 @@
 		0025A2431C29099F00586EBF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0025A2541C29099F00586EBF /* LaunchScreen.storyboard */,
+				0025A2521C29099F00586EBF /* Assets.xcassets */,
+				0025A2571C29099F00586EBF /* Info.plist */,
+				0025A24F1C29099F00586EBF /* Fleetfeet.xcdatamodeld */,
 				0025A2441C29099F00586EBF /* main.m */,
 			);
 			name = "Supporting Files";
@@ -264,8 +305,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				001963DA1C2D0521002CD663 /* CollectDataView.m in Sources */,
+				001963D41C2D04DD002CD663 /* NetworkConnectViewController.m in Sources */,
 				0025A2481C29099F00586EBF /* AppDelegate.m in Sources */,
 				0025A2511C29099F00586EBF /* Fleetfeet.xcdatamodeld in Sources */,
+				001963D71C2D050E002CD663 /* BaseTabViewController.m in Sources */,
+				001963DD1C2D055A002CD663 /* SettingsView.m in Sources */,
+				001963CF1C2D04A4002CD663 /* NetworkConnectView.m in Sources */,
 				0025A2451C29099F00586EBF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +530,7 @@
 				0025A2721C29099F00586EBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0025A2731C29099F00586EBF /* Build configuration list for PBXNativeTarget "FleetfeetTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +539,7 @@
 				0025A2751C29099F00586EBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0025A2761C29099F00586EBF /* Build configuration list for PBXNativeTarget "FleetfeetUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +548,7 @@
 				0025A2781C29099F00586EBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

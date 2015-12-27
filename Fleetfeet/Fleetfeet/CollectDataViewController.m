@@ -1,28 +1,18 @@
 //
-//  NetworkConnectViewController.m
+//  CollectDataViewController.m
 //  Fleetfeet
 //
-//  Created by Xuehao(David) Hu on 12/24/15.
+//  Created by Xuehao(David) Hu on 12/26/15.
 //  Copyright © 2015 Xuehao(David) Hu. All rights reserved.
 //
 
-#import "NetworkConnectViewController.h"
-#import "NetworkConnectView.h"
+#import "CollectDataViewController.h"
 
-
-@interface NetworkConnectViewController ()
-
-@property (nonatomic, strong) NetworkConnectView *view;
+@interface CollectDataViewController ()
 
 @end
 
-@implementation NetworkConnectViewController
-@dynamic view;
-
--(void)loadView{
-    self.view = [NetworkConnectView new];
-    //self.view.translatesAutoresizingMaskIntoConstraints = NO;
-}
+@implementation CollectDataViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -7,8 +7,18 @@
 //
 
 #import "BaseTabViewController.h"
+#import "NetworkConnectViewController.h"
+#import "CollectDataViewController.h"
+#import "SettingsViewController.h"
 
-@interface BaseTabViewController ()
+typedef enum {
+    NetworkConnection = 0,
+    CollectData = 1,
+    Settings = 2
+}FleetFeetTab;
+
+
+@interface BaseTabViewController ()<UITabBarControllerDelegate,UINavigationControllerDelegate>
 
 @end
 
@@ -16,7 +26,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    self.delegate = self;
+    
+    NetworkConnectViewController *networkVC = [NetworkConnectViewController new];
+    UINavigationController *networkNavVC = [[UINavigationController alloc] initWithRootViewController:networkVC];
+    networkNavVC.title = @"Connect";
+    networkNavVC.tabBarItem.image = [UIImage imageNamed:@"Network-UnSelected"];
+    
+    CollectDataViewController *collectDataVC = [CollectDataViewController new];
+    UINavigationController *collectNavVC = [[UINavigationController alloc] initWithRootViewController:collectDataVC];
+    collectNavVC.title = @"Collect Data";
+    collectNavVC.tabBarItem.image = [UIImage imageNamed:@"Collecting-UnSelected"];
+    
+    SettingsViewController *settingsVC = [SettingsViewController new];
+    UINavigationController *settingsNavVC = [[UINavigationController alloc] initWithRootViewController:settingsVC];
+    settingsNavVC.title = @"Settings";
+    settingsNavVC.tabBarItem.image = [UIImage imageNamed:@"More-UnSelected"];
+    
+    self.viewControllers = [NSArray arrayWithObjects:networkNavVC,collectNavVC,settingsNavVC,nil];
+    
 }
 
 - (void)didReceiveMemoryWarning {

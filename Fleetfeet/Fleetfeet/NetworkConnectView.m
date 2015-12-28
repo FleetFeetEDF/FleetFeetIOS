@@ -44,8 +44,16 @@
 
 -(void)createSubViews{
     self.backgroundColor = [UIColor whiteColor];
-
-
+    
+    [self addSubview:self.sensorConnectionSubView];
+    [self.sensorConnectionSubView addSubview:self.sensorConnectionLabel];
+    [self.sensorConnectionSubView addSubview:self.sensorConnectionStatusImageView];
+    [self.sensorConnectionSubView addSubview:self.sensorConnectButton];
+    
+    [self addSubview:self.wifiConnectionSubView];
+    [self.wifiConnectionSubView addSubview:self.wifiConnectionLabel];
+    [self.wifiConnectionSubView addSubview:self.wifiConnectionStatusImageView];
+    [self.wifiConnectionSubView addSubview:self.wifiConnectButton];
 }
 
 //****************************************************
@@ -151,6 +159,58 @@
 // set up Constraints
 //****************************************************
 -(void)setUpConstraints{
+    CGFloat screenHeight = [[UIScreen mainScreen] bounds].size.height;
+    NSDictionary *sensorConnectMetrics = @{
+                                           @"sensorConnectSubViewHeight":[NSNumber numberWithFloat:screenHeight/2],
+                                           
+                                           @"sensorConnectLabelTop":[NSNumber numberWithFloat:30.f],
+                                           @"sensorConnectLabelHeight":[NSNumber numberWithFloat:22.f],
+                                           @"sensorConnectLabelWidth":[NSNumber numberWithFloat:200.f],
+                                           
+                                           @"sensorConnectStatusImageViewTop":[NSNumber numberWithFloat:10.f],
+                                           @"sensorConnectStatusImageViewWidth":[NSNumber numberWithFloat:122.f],
+                                           @"sensorConnectStatusImageViewHeight":[NSNumber numberWithFloat:110.f],
+                                           
+                                           @"sensorConnectButtonTop":[NSNumber numberWithFloat:40.f],
+                                           @"sensorConnectButtonWidth":[NSNumber numberWithFloat:124.f],
+                                           @"sensorConnectButtonHeight":[NSNumber numberWithFloat:35.f]
+                                           
+                                           };
+    
+    NSDictionary *wifiConnectMetrics = @{
+                                         @"wifiConnectSubViewHeight":[NSNumber numberWithFloat:screenHeight/2],
+                                         
+                                         @"wifiConnectLabelTop":[NSNumber numberWithFloat:30.f],
+                                         @"wifiConnectLabelHeight":[NSNumber numberWithFloat:22.f],
+                                         @"wifiConnectLabelWidth":[NSNumber numberWithFloat:200.f],
+                                         
+                                         @"wifiConnectStatusImageViewTop":[NSNumber numberWithFloat:10.f],
+                                         @"wifiConnectStatusImageViewWidth":[NSNumber numberWithFloat:122.f],
+                                         @"wifiConnectStatusImageViewHeight":[NSNumber numberWithFloat:110.f],
+                                         
+                                         @"wifiConnectButtonTop":[NSNumber numberWithFloat:40.f],
+                                         @"wifiConnectButtonWidth":[NSNumber numberWithFloat:124.f],
+                                         @"wifiConnectButtonHeight":[NSNumber numberWithFloat:35.f]
+                                         };
+    
+    //sensor connect subview
+    NSArray *sensorConnectSubviewConstraints_V = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[_sensorConnectionSubView(sensorConnectSubViewHeight)]" options:0 metrics:sensorConnectMetrics views:NSDictionaryOfVariableBindings(_sensorConnectionSubView)];
+    NSArray *sensorConnectSubviewConstraints_H = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[_sensorConnectionSubView]-0-|" options:0 metrics:sensorConnectMetrics views:NSDictionaryOfVariableBindings(_sensorConnectionSubView)];
+    [self addConstraints:sensorConnectSubviewConstraints_H];
+    [self addConstraints:sensorConnectSubviewConstraints_V];
+    
+    //sensor connect label
+    NSArray *sensorConnectLabelConstraints_V = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-sensorConnectLabelTop-[_sensorConnectionLabel(sensorConnectLabelHeight)]" options:0 metrics:sensorConnectMetrics views:NSDictionaryOfVariableBindings(_sensorConnectionLabel)];
+    NSArray *sensorConnectLabelConstraints_H = [NSLayoutConstraint constraintsWithVisualFormat:@"H:[_sensorConnectionLabel(sensorConnectLabelWidth)]" options:0 metrics:sensorConnectMetrics views:NSDictionaryOfVariableBindings(_sensorConnectionLabel)];
+    NSLayoutConstraint *sensorConnectLabelCenterX = [NSLayoutConstraint constraintWithItem:self.sensorConnectionLabel attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.sensorConnectionSubView attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0.0];
+    [self.sensorConnectionSubView addConstraints:sensorConnectLabelConstraints_H];
+    [self.sensorConnectionSubView addConstraints:sensorConnectLabelConstraints_V];
+    [self.sensorConnectionSubView addConstraint:sensorConnectLabelCenterX];
+    
+    
+    
+    
+    
 
 }
 

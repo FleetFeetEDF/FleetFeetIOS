@@ -21,7 +21,7 @@
 
 -(void)loadView{
     self.view = [NetworkConnectView new];
-    //self.view.translatesAutoresizingMaskIntoConstraints = NO;
+    self.view.translatesAutoresizingMaskIntoConstraints = NO;
 }
 
 - (void)viewDidLoad {

@@ -7,16 +7,26 @@
 //
 
 #import "CollectDataViewController.h"
+#import "CollectDataView.h"
 
 @interface CollectDataViewController ()
+
+@property (nonatomic, strong) CollectDataView *view;
 
 @end
 
 @implementation CollectDataViewController
+@dynamic view;
+
+-(void)loadView{
+    self.view = [CollectDataView new];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self.navigationItem setTitle:@"Collect Data"];
 }
 
 - (void)didReceiveMemoryWarning {

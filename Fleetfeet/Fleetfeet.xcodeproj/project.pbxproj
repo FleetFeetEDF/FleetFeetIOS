@@ -19,6 +19,7 @@
 		0025A2561C29099F00586EBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0025A2541C29099F00586EBF /* LaunchScreen.storyboard */; };
 		0025A2611C29099F00586EBF /* FleetfeetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0025A2601C29099F00586EBF /* FleetfeetTests.m */; };
 		0025A26C1C29099F00586EBF /* FleetfeetUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0025A26B1C29099F00586EBF /* FleetfeetUITests.m */; };
+		009A9DFA1C311E700090AB8D /* SettingsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 009A9DF91C311E700090AB8D /* SettingsTableViewCell.m */; };
 		00A607C11C2FB7C0002BBC56 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A607C01C2FB7C0002BBC56 /* Constants.m */; };
 		00A607C41C2FB8DF002BBC56 /* InAppIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A607C31C2FB8DF002BBC56 /* InAppIcons.xcassets */; };
 		00A607C71C2FC1DE002BBC56 /* CollectDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A607C61C2FC1DE002BBC56 /* CollectDataViewController.m */; };
@@ -67,6 +68,8 @@
 		0025A2671C29099F00586EBF /* FleetfeetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FleetfeetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0025A26B1C29099F00586EBF /* FleetfeetUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FleetfeetUITests.m; sourceTree = "<group>"; };
 		0025A26D1C29099F00586EBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		009A9DF81C311E700090AB8D /* SettingsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewCell.h; sourceTree = "<group>"; };
+		009A9DF91C311E700090AB8D /* SettingsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewCell.m; sourceTree = "<group>"; };
 		00A607BF1C2FB7C0002BBC56 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		00A607C01C2FB7C0002BBC56 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		00A607C31C2FB8DF002BBC56 /* InAppIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = InAppIcons.xcassets; sourceTree = "<group>"; };
@@ -110,6 +113,7 @@
 				001963D91C2D0521002CD663 /* CollectDataView.m */,
 				001963DB1C2D055A002CD663 /* SettingsView.h */,
 				001963DC1C2D055A002CD663 /* SettingsView.m */,
+				009A9DF71C311E390090AB8D /* ReusableCells */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -192,6 +196,15 @@
 				0025A26D1C29099F00586EBF /* Info.plist */,
 			);
 			path = FleetfeetUITests;
+			sourceTree = "<group>";
+		};
+		009A9DF71C311E390090AB8D /* ReusableCells */ = {
+			isa = PBXGroup;
+			children = (
+				009A9DF81C311E700090AB8D /* SettingsTableViewCell.h */,
+				009A9DF91C311E700090AB8D /* SettingsTableViewCell.m */,
+			);
+			name = ReusableCells;
 			sourceTree = "<group>";
 		};
 		00A607C21C2FB8AB002BBC56 /* Resources */ = {
@@ -335,6 +348,7 @@
 			files = (
 				001963DA1C2D0521002CD663 /* CollectDataView.m in Sources */,
 				001963D41C2D04DD002CD663 /* NetworkConnectViewController.m in Sources */,
+				009A9DFA1C311E700090AB8D /* SettingsTableViewCell.m in Sources */,
 				0025A2481C29099F00586EBF /* AppDelegate.m in Sources */,
 				0025A2511C29099F00586EBF /* Fleetfeet.xcdatamodeld in Sources */,
 				001963D71C2D050E002CD663 /* BaseTabViewController.m in Sources */,

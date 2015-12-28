@@ -12,7 +12,7 @@
 
 @interface NetworkConnectViewController ()
 
-@property (nonatomic, strong) NetworkConnectView *view;
+@property (nonatomic, strong) NetworkConnectView *networkConnectView;
 
 @end
 
@@ -20,13 +20,16 @@
 @dynamic view;
 
 -(void)loadView{
-    self.view = [NetworkConnectView new];
-    self.view.translatesAutoresizingMaskIntoConstraints = NO;
+    self.view = [self networkConnectView];
+//    self.view.translatesAutoresizingMaskIntoConstraints = NO;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self.navigationItem setTitle:@"Network Connect"];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,5 +46,13 @@
     // Pass the selected object to the new view controller.
 }
 */
+-(NetworkConnectView *)networkConnectView{
+    if(!_networkConnectView){
+        _networkConnectView = [NetworkConnectView new];
+//        _networkConnectView.translatesAutoresizingMaskIntoConstraints = NO;
+    }
+    return _networkConnectView;
+}
+
 
 @end

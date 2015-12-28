@@ -29,7 +29,7 @@ typedef enum {
 
     self.delegate = self;
     
-    NetworkConnectViewController *networkVC = [NetworkConnectViewController new];
+    NetworkConnectViewController *networkVC = [[NetworkConnectViewController alloc] init];
     UINavigationController *networkNavVC = [[UINavigationController alloc] initWithRootViewController:networkVC];
     networkNavVC.title = @"Connect";
     networkNavVC.tabBarItem.image = [UIImage imageNamed:@"Network-UnSelected"];

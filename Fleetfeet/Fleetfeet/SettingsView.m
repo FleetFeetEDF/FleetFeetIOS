@@ -8,14 +8,49 @@
 
 #import "SettingsView.h"
 
+@interface SettingsView()
+
+//@property (nonatomic, strong) 
+
+@end
+
 @implementation SettingsView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+-(id)initWithFrame:(CGRect)frame{
+    self = [super initWithFrame:frame];
+    if(self){
+        [self createSubViews];
+    }
+    return self;
 }
-*/
+
+-(id)init{
+    return [self initWithFrame:CGRectZero];
+}
+
+-(void)createSubViews{
+    self.backgroundColor = [UIColor whiteColor];
+    
+
+    
+}
+
+//*************************************************
+// sub views
+//*************************************************
+
+
+
+
+
+//*************************************************
+// constraints
+//*************************************************
+-(void)setUpConstraints{
+    
+}
+
+
+
 
 @end

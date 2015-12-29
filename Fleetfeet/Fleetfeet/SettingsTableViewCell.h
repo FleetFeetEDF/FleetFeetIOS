@@ -10,4 +10,8 @@
 
 @interface SettingsTableViewCell : UITableViewCell
 
+
+@property (nonatomic, strong) UIImageView* settingIcon;
+@property (nonatomic, strong) UILabel* settingNameLabel;
+
 @end
